@@ -134,6 +134,51 @@
                 </audio>
             </figure>
         </section>
+          <!-- Formulario de la web -->
+
+        <section>
+            <header>
+                <h2>Formulario de la web</h2>
+            </header>
+
+            <form>
+               <fieldset>
+                  <legend>Datos del Formulario</legend>
+                   <label for="nombre">Nombre:</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                  <br><br>
+                  <label for="correo">Correo Electronico:</label>
+                  <input type="email" id="correo" placeholder="Ingrese su email" required>
+                  <br><br>
+                  <label for="edad">Edad:</label>
+                  <input type="number" name="edad" id="edad" min="1" max="99" placeholder="1-99">
+                  <br><br>
+                  <label for="genero">Genero:</label>
+                  <br>
+                  <input type="radio" name="genero" id="genero">Masculino
+                  <br>
+                  <input type="radio" name="genero" id="genero">Femenino
+                  <br><br>
+                  <label for="intereses">Intereses</label>
+                  <br>
+                  <input type="checkbox" name="intereses" id="intereses">leer
+                  <br>
+                  <input type="checkbox" name="intereses" id="intereses">Jugar
+                  <br>
+                  <input type="checkbox" name="intereses" id="intereses">Viajar
+                  <br>
+                  <input type="checkbox" name="intereses" id="intereses">tocar un instrumento
+                  <br>
+                  <input type="checkbox" name="intereses" id="intereses">practicar yoga
+                  <br><br>
+                  <label for="comentario">Comentarios: </label>
+                  <br>
+                  <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario..."></textarea>
+               </fieldset>
+               <input type="submit" value="ENVIAR">
+               <input type="reset" value="REINICIAR">
+            </form>
+        </section>
     </main>
 
     <!-- Pie de página -->
