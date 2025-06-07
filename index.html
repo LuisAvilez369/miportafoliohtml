@@ -10,192 +10,216 @@
 </head>
 <body>
     <!-- Cabecera principal del sitio -->
-    <header id="irarriba">
-        <div>
-            <figure>
-                <img src="img/avatar.png" alt="Foto de perfil de Luis Avilez" width="150" height="200">
-                <figcaption>Luis Avilez</figcaption>
+    <header class="cabecera" id="irarriba">
+        <div class="cabecera__contenido">
+            <figure class="cabecera__figure">
+                <img class="cabecera__avatar" src="img/avatar.png" alt="Foto de perfil de Luis Avilez" width="150" height="200">
+                <figcaption class="cabecera__figcaption">Luis Avilez</figcaption>
             </figure>
-            <h1>Portafolio Web de <mark>Luis Fernando Avilez Cevallos</mark></h1>
-            <p>"Creando experiencias, no solo proyectos"</p>
+            <h1 class="cabecera__titulo">Portafolio Web de Luis Fernando Avilez Cevallos</h1>
+            <p class="cabecera__subtitulo">"Creando experiencias, no solo proyectos"</p>
         </div>
     </header>
 
     <!-- Navegación principal -->
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#intereses">Intereses</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    <nav class="navegacion">
+        <ul class="navegacion__lista">
+            <li class="navegacion__item"><a class="navegacion__enlace" href="#sobre-mi">Sobre mí</a></li>
+            <li class="navegacion__item"><a class="navegacion__enlace" href="#intereses">Intereses</a></li>
+            <li class="navegacion__item"><a class="navegacion__enlace" href="#habilidades">Habilidades</a></li>
+            <li class="navegacion__item"><a class="navegacion__enlace" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="contenedor">
         <!-- Sección sobre mí -->
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="seccion">
             <header>
-                <h2>Sobre mí</h2>
+                <h2 class="seccion__titulo">Sobre mí</h2>
             </header>
-            <article>
+            <article class="articulo">
                 <p>Soy Luis Avilez, un joven de 20 años que vive en <em>Babahoyo, Ecuador</em>. Con una mentalidad orientada al crecimiento, aspiro a convertirme en un <strong>ingeniero de sistemas altamente calificado</strong>, especializado en soluciones tecnológicas innovadoras.</p>
                 <p>Me considero una persona <strong>responsable, autodidacta y perseverante</strong>, constantemente aprendiendo nuevas tecnologías para crear código eficiente y aplicaciones funcionales. Mi objetivo va más allá de programar: busco <strong>desarrollar sistemas que impacten positivamente en mi comunidad</strong>, combinando lógica, creatividad y mejores prácticas.</p>
             </article>
         </section>
 
         <!-- Sección de intereses y logros -->
-        <section id="intereses">
-            <h2>Intereses y Logros</h2>
+        <section id="intereses" class="seccion">
+            <h2 class="seccion__titulo">Intereses y Logros</h2>
             
-            <article >
-                <h3>🎯 Intereses</h3>
-                <ul>
-                    <li>Desarrollo Full Stack <small>(mi meta actual)</small></li>
-                    <li>Inteligencia Artificial aplicada</li>
-                    <li>Lograr crear una empresa de software</li>
-                    <li>Incentivar la tecnología en mi ciudad</li>
+            <article class="articulo">
+                <h3 class="articulo__subtitulo">🎯 Intereses</h3>
+                <ul class="articulo__lista">
+                    <li class="articulo__item">Desarrollo Full Stack <small>(mi meta actual)</small></li>
+                    <li class="articulo__item">Inteligencia Artificial aplicada</li>
+                    <li class="articulo__item">Lograr crear una empresa de software</li>
+                    <li class="articulo__item">Incentivar la tecnología en mi ciudad</li>
                 </ul>
             </article>
             
-            <article>
-                <h3>🏆 Logros</h3>
-                <ol>
-                    <li>Certificación en Mantenimiento de computadoras <time>(2023)</time></li>
-                    <li>Proyecto académico destacado en la universidad</li>
-                    <li>Dominio básico del lenguaje HTML5</li>
+            <article class="articulo">
+                <h3 class="articulo__subtitulo">🏆 Logros</h3>
+                <ol class="articulo__lista">
+                    <li class="articulo__item">Certificación en Mantenimiento de computadoras <time>(2023)</time></li>
+                    <li class="articulo__item">Proyecto académico destacado en la universidad</li>
+                    <li class="articulo__item">Dominio básico del lenguaje HTML5</li>
                 </ol>
             </article>
         </section>
 
         <!-- Sección de habilidades -->
-        <section id="habilidades" >
-            <h2 >Mis habilidades - Luis Avilez</h2>
-            <div>
-               <table border="1">
-      <caption><strong>Mis habilidades</strong></caption>
-      <thead>
-        <tr>
-          <th>Categoría</th>
-          <th>Habilidad</th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="3">Comunicación</th>
-          <td>Escucha activa</td>
-          
-        </tr>
-        <tr>
-          <td>Oratoria</td>
-          
-        </tr>
-        <tr>
-          <td>Empatía</td>
-          
-        </tr>
-        <tr>
-          <th rowspan="2">Trabajo en equipo</th>
-          <td>Colaboración</td>
-          
-        </tr>
-        <tr>
-          <td>Resolución de conflictos</td>
-         
-        </tr>
-        <tr>
-          <th rowspan="2">Gestión personal</th>
-          <td>Organización</td>
-          
-        </tr>
-        <tr>
-          <td>Adaptabilidad</td>
-         
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">
-            <small><em>Actualizado: 2025-05-2025</small>
-          </td>
-        </tr>
-      </tfoot>
-    </table>
-
+        <section id="habilidades" class="seccion">
+            <h2 class="seccion__titulo">Mis habilidades - Luis Avilez</h2>
+            <div class="seccion__contenido">
+               <table class="tabla" border="1">
+                  <caption class="tabla__caption"><strong>Mis habilidades</strong></caption>
+                  <thead class="tabla__cabecera">
+                    <tr class="tabla__fila">
+                      <th class="tabla__encabezado">Categoría</th>
+                      <th class="tabla__encabezado">Habilidad</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tabla__cuerpo">
+                    <tr class="tabla__fila">
+                      <th class="tabla__encabezado" rowspan="3">Comunicación</th>
+                      <td class="tabla__dato">Escucha activa</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <td class="tabla__dato">Oratoria</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <td class="tabla__dato">Empatía</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <th class="tabla__encabezado" rowspan="2">Trabajo en equipo</th>
+                      <td class="tabla__dato">Colaboración</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <td class="tabla__dato">Resolución de conflictos</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <th class="tabla__encabezado" rowspan="2">Gestión personal</th>
+                      <td class="tabla__dato">Organización</td>
+                    </tr>
+                    <tr class="tabla__fila">
+                      <td class="tabla__dato">Adaptabilidad</td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="tabla__pie">
+                    <tr class="tabla__fila">
+                      <td class="tabla__dato" colspan="3">
+                        <small><em>Actualizado: 2025-05-2025</em></small>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
             </div>
         </section>
 
         <!-- Sección multimedia -->
-        <section >
-            <h2 >Presentación Multimedia</h2>
-            <figure>
-                <figcaption>Escucha mi presentación en audio:</figcaption>
-                <audio controls>
+        <section class="seccion">
+            <h2 class="seccion__titulo">Presentación Multimedia</h2>
+            <figure class="multimedia">
+                <figcaption class="multimedia__leyenda">Escucha mi presentación en audio:</figcaption>
+                <audio class="multimedia__audio" controls>
                     <source src="audio/audiopresentacion_Audio Denoise.mp3" type="audio/mpeg">
                 </audio>
             </figure>
         </section>
-          <!-- Formulario de la web -->
 
-        <section>
+        <!-- Formulario de la web -->
+        <section class="seccion">
             <header>
-                <h2>Formulario de la web</h2>
+                <h2 class="seccion__titulo">Formulario de la web</h2>
             </header>
 
-            <form>
-               <fieldset>
-                  <legend>Datos del Formulario</legend>
-                   <label for="nombre">Nombre:</label>
-                  <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                  <br><br>
-                  <label for="correo">Correo Electronico:</label>
-                  <input type="email" id="correo" placeholder="Ingrese su email" required>
-                  <br><br>
-                  <label for="edad">Edad:</label>
-                  <input type="number" name="edad" id="edad" min="1" max="99" placeholder="1-99">
-                  <br><br>
-                  <label for="genero">Genero:</label>
-                  <br>
-                  <input type="radio" name="genero" id="genero">Masculino
-                  <br>
-                  <input type="radio" name="genero" id="genero">Femenino
-                  <br><br>
-                  <label for="intereses">Intereses</label>
-                  <br>
-                  <input type="checkbox" name="intereses" id="intereses">leer
-                  <br>
-                  <input type="checkbox" name="intereses" id="intereses">Jugar
-                  <br>
-                  <input type="checkbox" name="intereses" id="intereses">Viajar
-                  <br>
-                  <input type="checkbox" name="intereses" id="intereses">tocar un instrumento
-                  <br>
-                  <input type="checkbox" name="intereses" id="intereses">practicar yoga
-                  <br><br>
-                  <label for="comentario">Comentarios: </label>
-                  <br>
-                  <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario..."></textarea>
+            <form class="formulario">
+               <fieldset class="formulario__grupo">
+                  <legend class="formulario__leyenda">Datos del Formulario</legend>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="nombre">Nombre:</label>
+                    <input class="formulario__entrada" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                  </div>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="correo">Correo Electrónico:</label>
+                    <input class="formulario__entrada" type="email" id="correo" placeholder="Ingrese su email" required>
+                  </div>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="edad">Edad:</label>
+                    <input class="formulario__entrada" type="number" name="edad" id="edad" min="1" max="99" placeholder="1-99">
+                  </div>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta">Género:</label>
+                    <div class="formulario__opciones">
+                      <label class="formulario__opcion">
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                      </label>
+                      <label class="formulario__opcion">
+                        <input type="radio" name="genero" value="femenino">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta">Intereses:</label>
+                    <div class="formulario__opciones">
+                      <label class="formulario__opcion">
+                        <input type="checkbox" name="intereses" value="leer">
+                        Leer
+                      </label>
+                      <label class="formulario__opcion">
+                        <input type="checkbox" name="intereses" value="jugar">
+                        Jugar
+                      </label>
+                      <label class="formulario__opcion">
+                        <input type="checkbox" name="intereses" value="viajar">
+                        Viajar
+                      </label>
+                      <label class="formulario__opcion">
+                        <input type="checkbox" name="intereses" value="instrumento">
+                        Tocar un instrumento
+                      </label>
+                      <label class="formulario__opcion">
+                        <input type="checkbox" name="intereses" value="yoga">
+                        Practicar yoga
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="formulario__campo">
+                    <label class="formulario__etiqueta" for="comentario">Comentarios:</label>
+                    <textarea class="formulario__area-texto" name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un comentario..."></textarea>
+                  </div>
                </fieldset>
-               <input type="submit" value="ENVIAR">
-               <input type="reset" value="REINICIAR">
+               
+               <div class="formulario__botones">
+                  <input class="formulario__boton formulario__boton--enviar" type="submit" value="ENVIAR">
+                  <input class="formulario__boton formulario__boton--reiniciar" type="reset" value="REINICIAR">
+               </div>
             </form>
         </section>
     </main>
-     <br>
-    <a href="#irarriba">🔼 ir hacia arriba</a>
-    <br>
+    
+    <a class="enlace-arriba" href="#irarriba">🔼 ir hacia arriba</a>
+    
     <!-- Pie de página -->
-    <footer id="contacto">
-        <h2>Contacto</h2>
-        <address>
+    <footer id="contacto" class="pie-pagina">
+        <h2 class="pie-pagina__titulo">Contacto</h2>
+        <address class="pie-pagina__direccion">
             Puedes contactarme a través de:
-            <ul>
-                <li><a href="https://www.facebook.com/" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=593967549140" rel="noopener noreferrer">WhatsApp</a></li>
-                <li><a href="https://www.tiktok.com/es/" rel="noopener noreferrer">TikTok</a></li>
+            <ul class="pie-pagina__lista">
+                <li class="pie-pagina__item"><a class="pie-pagina__enlace" href="https://www.facebook.com/" rel="noopener noreferrer">Facebook</a></li>
+                <li class="pie-pagina__item"><a class="pie-pagina__enlace" href="https://api.whatsapp.com/send?phone=593967549140" rel="noopener noreferrer">WhatsApp</a></li>
+                <li class="pie-pagina__item"><a class="pie-pagina__enlace" href="https://www.tiktok.com/es/" rel="noopener noreferrer">TikTok</a></li>
             </ul>
         </address>
-        <p><small>&copy; 2025 Luis Avilez. Todos los derechos reservados.</small></p>
+        <p class="pie-pagina__copyright"><small>&copy; 2025 Luis Avilez. Todos los derechos reservados.</small></p>
     </footer>
 </body>
 </html>
